@@ -26,11 +26,11 @@ A flowchart is a step-by-step visual representation of an algorithm. It maps out
 
 | Symbol Shape | Name | What it does |
 | :--- | :--- | :--- |
-| ![Oval/Pill](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png) | Start / End | Marks the absolute beginning and end of the algorithm. |
-| ![Parallelogram](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flowchart_IO.svg/100px-Flowchart_IO.svg.png) | Input / Output | Getting data from the user or printing it to the screen. |
-| ![Rectangle](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flowchart_Process.svg/100px-Flowchart_Process.svg.png) | Process / Action | Math operations, assigning variables, or moving data. |
-| ![Diamond](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png) | Decision | A question with a Yes/No (True/False) answer. Creates branches. |
-| ![Arrows](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flowchart_Line.svg/100px-Flowchart_Line.svg.png) | Flow Lines | Connects symbols and shows the exact path of execution. |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png" width="80"> | Start / End | Marks the absolute beginning and end of the algorithm. |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flowchart_IO.svg/100px-Flowchart_IO.svg.png" width="80"> | Input / Output | Getting data from the user or printing it to the screen. |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flowchart_Process.svg/100px-Flowchart_Process.svg.png" width="80"> | Process / Action | Math operations, assigning variables, or moving data. |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png" width="80"> | Decision | A question with a Yes/No (True/False) answer. Creates branches. |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flowchart_Line.svg/100px-Flowchart_Line.svg.png" width="80"> | Flow Lines | Connects symbols and shows the exact path of execution. |
 
 ### 🛠️ Example: Is the number Even or Odd?
 If we were to draw this out:
