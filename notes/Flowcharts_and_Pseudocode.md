@@ -24,22 +24,40 @@ A flowchart is a step-by-step visual representation of an algorithm. It maps out
 
 ### 📌 Standard Flowchart Symbols
 
-| Symbol Shape | Name | What it does |
-| :--- | :--- | :--- |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flowchart_Terminal.svg/100px-Flowchart_Terminal.svg.png" width="80"> | Start / End | Marks the absolute beginning and end of the algorithm. |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flowchart_IO.svg/100px-Flowchart_IO.svg.png" width="80"> | Input / Output | Getting data from the user or printing it to the screen. |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flowchart_Process.svg/100px-Flowchart_Process.svg.png" width="80"> | Process / Action | Math operations, assigning variables, or moving data. |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flowchart_Decision.svg/100px-Flowchart_Decision.svg.png" width="80"> | Decision | A question with a Yes/No (True/False) answer. Creates branches. |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Flowchart_Line.svg/100px-Flowchart_Line.svg.png" width="80"> | Flow Lines | Connects symbols and shows the exact path of execution. |
+```mermaid
+graph TD
+    %% Start/End Shape (Oval)
+    S1([Start / End: Marks the absolute beginning and end of the algorithm.])
+    
+    %% Input/Output Shape (Parallelogram)
+    S2[/Input / Output: Getting data from the user or printing it to the screen./]
+    
+    %% Process/Action Shape (Rectangle)
+    S3[Process / Action: Math operations, assigning variables, or moving data.]
+    
+    %% Decision Shape (Diamond)
+    S4{Decision: A question with a Yes/No answer. Creates branches.}
+    
+    %% Flow Lines (Arrows)
+    S5((Symbol A)) -->|Flow Lines: Connects symbols and shows the exact path| S6((Symbol B))
+
+    %% Invisible links to stack the shapes neatly in your document
+    S1 ~~~ S2 ~~~ S3 ~~~ S4 ~~~ S5
+```
 
 ### 🛠️ Example: Is the number Even or Odd?
 If we were to draw this out:
-1. `[Oval]` **START**
-2. `[Parallelogram]` **READ** a number as `N`
-3. `[Diamond]` **IS** `N % 2 == 0`?
-    * *If YES (True):* Follow arrow to `[Parallelogram]` **PRINT** "Even"
-    * *If NO (False):* Follow arrow to `[Parallelogram]` **PRINT** "Odd"
-4. Both arrows lead to -> `[Oval]` **END**
+```mermaid
+graph TD
+    A([START]) --> B[/READ N/]
+    B --> C{N % 2 == 0?}
+    
+    C -- YES --> D[/PRINT "Even"/]
+    C -- NO --> E[/PRINT "Odd"/]
+    
+    D --> F([END])
+    E --> F([END])
+```
 
 ---
 
