@@ -23,12 +23,12 @@ The fundamental intuition is: **"If a prefix sum becomes negative, it will only 
 
 ```mermaid
 flowchart TD
-    Start([Start Loop]) --> Add[currSum += arr[i]]
-    Add --> Compare{currSum > maxSum?}
-    Compare -- Yes --> UpdateMax[maxSum = currSum]
-    UpdateMax --> CheckNegative{currSum < 0?}
+    Start([Start Loop]) --> Add["currSum += arr[i]"]
+    Add --> Compare{"currSum > maxSum?"}
+    Compare -- Yes --> UpdateMax["maxSum = currSum"]
+    UpdateMax --> CheckNegative{"currSum < 0?"}
     Compare -- No --> CheckNegative
-    CheckNegative -- Yes --> Reset[currSum = 0]
+    CheckNegative -- Yes --> Reset["currSum = 0"]
     Reset --> End([Next Element])
     CheckNegative -- No --> End
 ```
